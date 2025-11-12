@@ -13,7 +13,7 @@ from torch import Tensor, nn  # noqa: E402
 
 @pytest.fixture
 def torch_model_small_2d_2d() -> nn.Module:
-    """Return a small linear model with 2 input and 2 output neurons."""
+    """Return small linear model with 2 input and 2 output neurons."""
     model = nn.Sequential(
         nn.Linear(2, 2),
         nn.Linear(2, 2),
